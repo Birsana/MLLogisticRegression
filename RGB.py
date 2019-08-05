@@ -1,5 +1,6 @@
 # This is my first machine learning algorithm I've coded, using logistic regression. It will pick whether a light or
-# dark background is better for a certain text colour based on its RGB values
+# dark background is better for a certain text colour based on its RGB values, wanted to make it from scratch (e.g not with
+#something like tensorflow)
 
 import numpy as np
 from matplotlib import pyplot as plt
