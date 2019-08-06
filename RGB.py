@@ -234,7 +234,7 @@ if (not examiningCode):
 
 '''Final comments:
 
-If I were to do this problem again, I'd try to have better data collecting process than eyeballing text colour on a 
+If I were to do this problem again, I'd try to have better and more systematic data collecting process than eyeballing text colour on a 
 background, and collect far more data so I could have a training set, cross validation set, and test set. I'd also
 try adding more features, like maybe the individual R G B values; even though when I plotted them I saw no correlation,
 there may have actaully been one. This would also let me implement regularization. I'd also choose a better way to pick
