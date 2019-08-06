@@ -1,11 +1,10 @@
 # This is my first machine learning algorithm I've coded, using logistic regression. It will pick whether a light or
-# dark background is better for a certain text colour based on its RGB values, wanted to make it from scratch (e.g not with
-#something like tensorflow)
+# dark background is better for a certain text colour based on its RGB values
 
 import numpy as np
 from matplotlib import pyplot as plt
 
-examiningCode = False  # change to false if you want to run the program from a debugging/testing point of view
+examiningCode = False  # change to true if you want to run the program from a debugging/testing point of view
 
 # I manually collected 35 examples, by randomly picking RGB values for text, amd comparing them on a white and dark
 # background
@@ -201,6 +200,12 @@ if (not examiningCode):
     gUser = int(input("Enter an G Value for your text"))
     bUser = int(input("Enter an B Value for your text"))
 
+
+    while rUser > 255 or gUser > 255 or bUser > 255 or rUser < 0 or gUser < 0 or bUser < 0:
+        print("Please enter values between 0 and 255")
+        rUser = int(input("Enter an R Value for your text"))
+        gUser = int(input("Enter an G Value for your text"))
+        bUser = int(input("Enter an B Value for your text"))
     darkBackground = False
     lightBackground = False
     rgbUser = rUser + gUser + bUser
